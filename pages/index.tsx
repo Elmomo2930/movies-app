@@ -38,8 +38,16 @@ const Home = ({
 
   const showModel = useRecoilValue(modalState)
 
+  const suscribts = false
 
-  if(load) return null
+
+  if(load || suscribts === null) return null
+
+  // if(!suscribts) return (
+  //   <div>
+  //     Sub plans
+  //   </div>
+  // )
   
   return (
     <div className={`relative h-screen bg-gradient-to-b  lg:h-[140vh]
